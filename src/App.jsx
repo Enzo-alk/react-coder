@@ -1,13 +1,18 @@
 import './App.css'
 
-function App() {
- 
+// App.jsx
+import React from 'react';
+import NavBar from './componentes/navbar/navbar';
+import ItemListContainer from './componentes/itemlistcontainer/ItemListContainer';
 
+function App() {
   return (
-      <div>
-      <h1>hola hola</h1>
-      </div>
-  )
+    <div>
+      <NavBar />
+      <ItemListContainer saludo="Primer prueba REACT" />
+      <ItemListContainer saludo="funciona o no funciona?" />
+    </div>
+  );
 }
 
-export default App
+export default App;
