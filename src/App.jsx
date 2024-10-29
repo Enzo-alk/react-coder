@@ -1,18 +1,27 @@
+//App.css
 import './App.css'
 
 // App.jsx
-import React from 'react';
-import NavBar from './componentes/navbar/navbar';
-import ItemListContainer from './componentes/itemlistcontainer/ItemListContainer';
+import NavBar from './componentes/NavBar/NavBar'
+import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
+import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer.jsx'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
+
   return (
-    <div>
-      <NavBar />
-      <ItemListContainer saludo="Primer prueba REACT" />
-      <ItemListContainer saludo="funciona o no funciona?" />
+    <div className='container-app'>
+      <BrowserRouter>
+        <NavBar />
+
+        <Routes>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/category/:idCategory" element={ <ItemListContainer /> } />
+          <Route path="/detail/:idProduct" element={ <ItemDetailContainer /> } />
+        </Routes>
+      </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

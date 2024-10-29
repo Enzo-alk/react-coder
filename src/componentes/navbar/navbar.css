@@ -1,0 +1,34 @@
+/* NavBar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #ebebeb;
+  }
+  
+  .navbar-logo img {
+    width: 50px;
+  }
+  
+  .navbar-categories {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-cart {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-cart img {
+    width: 30px;
+  }
+  
+  .navbar-cart span {
+    margin-left: 0.5rem;
+  }
+  

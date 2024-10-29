@@ -1,25 +1,29 @@
 // components/NavBar/NavBar.jsx
 import React from 'react';
+import imglogo from '../../assets/logo.jpg';
+import imgcarrito from '../../assets/cart.png';
+import { Link } from 'react-router-dom';
+import './NavBar.css'; 
 
 const NavBar = () => {
   return (
-    <nav style={{ display: 'flex', justifyContent: 'space-between', padding: '1rem', backgroundColor: '#f8f8f8' }}>
+    <nav className="navbar">
       {/* Logo */}
-      <div>
-        <img src="logo.png" alt="Logo" style={{ width: '50px' }} />
-      </div>
+      <Link to="/" className="navbar-logo">
+        <img src={imglogo} alt="Logo" />
+      </Link>
 
       {/* Categorías */}
-      <ul style={{ display: 'flex', listStyle: 'none', gap: '1rem' }}>
-        <li>Categoría 1</li>
-        <li>Categoría 2</li>
-        <li>Categoría 3</li>
+      <ul className="navbar-categories">
+        <li><Link to="/category/cajas" >Cajas</Link></li>
+        <li><Link to="/category/bolsas">Bolsas</Link></li>
+        <li><Link to="/category/envoltorios">Envoltorios</Link></li>
       </ul>
 
       {/* Carrito */}
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-        <img src="cart.png" alt="Carrito" style={{ width: '30px' }} />
-        <span style={{ marginLeft: '0.5rem' }}>3</span>
+      <div className="navbar-cart">
+        <img src={imgcarrito} alt="Carrito" />
+        <span>3</span>
       </div>
     </nav>
   );
