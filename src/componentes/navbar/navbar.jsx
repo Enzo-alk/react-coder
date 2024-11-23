@@ -1,9 +1,10 @@
 // components/NavBar/NavBar.jsx
 import React from 'react';
 import imglogo from '../../assets/logo.jpg';
-import imgcarrito from '../../assets/cart.png';
 import { Link } from 'react-router-dom';
 import './NavBar.css'; 
+import CartWidget from "./CartWidget"
+
 
 const NavBar = () => {
   return (
@@ -21,10 +22,7 @@ const NavBar = () => {
       </ul>
 
       {/* Carrito */}
-      <div className="navbar-cart">
-        <img src={imgcarrito} alt="Carrito" />
-        <span>3</span>
-      </div>
+      <CartWidget />
     </nav>
   );
 };

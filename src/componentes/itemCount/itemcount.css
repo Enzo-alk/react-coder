@@ -1,0 +1,58 @@
+.item-count {
+  width: 250px; /* Ancho ajustado */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza los elementos */
+  background-color: #f9f9f9; /* Fondo claro */
+  padding: 15px;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.item-count .controls-count {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%; /* Uso completo del ancho */
+}
+
+.controls-count button {
+  width: 50px; /* Botones más grandes */
+  height: 50px;
+  background-color: #bbb9b4; /* Color primario llamativo */
+  border: none; /* Sin bordes para un diseño moderno */
+  border-radius: 50%; /* Forma circular */
+  color: white;
+  font-size: 1.2rem; /* Texto más grande */
+  font-weight: bold;
+  transition: all 0.3s ease; /* Animación suave en hover */
+}
+
+.controls-count button:hover {
+  background-color: #d18a14; /* Color más oscuro al pasar el mouse */
+  cursor: pointer;
+}
+
+.controls-count p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333; /* Texto más oscuro */
+}
+
+.button-add-count {
+  padding: 12px 20px; /* Botón más grande y cómodo */
+  background-color: #bbb9b4;
+  border: none;
+  border-radius: 25px; /* Bordes redondeados estilo pill */
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+.button-add-count:hover {
+  background-color: #d18a14;
+  color: white;
+  cursor: pointer;
+}
